@@ -17,5 +17,15 @@ const date = day.padStart(2, '0') + ".12.2025";
 document.title = "Kuusikalenteri - " + date;
 document.getElementById("date-title").innerText = date;
 
-// Display puzzle content:
-ShowPuzzle(day);
+// Check if the puzzle is unlocked:
+const today = new Date();
+const puzzleDate = new Date(2025, 11, day);
+if (puzzleDate <= today) {
+    // Display puzzle content:
+    ShowPuzzle(day);
+} else {
+    const datediff = Math.ceil((puzzleDate - today) / (1000 * 60 * 60 * 24));
+    document.getElementById("note").innerText = "Luukkun voi avata " + datediff + " päivän päästä."
+}
+
+
