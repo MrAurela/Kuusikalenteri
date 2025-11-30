@@ -1,5 +1,6 @@
-html {
-
+* {
+    margin: 0;
+    padding: 0;
 }
 
 .calendar {
@@ -22,7 +23,7 @@ html {
   cursor: pointer;
 }
 
-/* Example door placement */
+/* Relative placements of buttons over the image: */
 #button1 { top: 74.8%; left: 22.8%; }
 #button2 { top: 31.3%; left: 45%; }
 #button3 { top: 38.3%; left: 55.7%; }
@@ -40,13 +41,13 @@ html {
 #button15 { top: 67.7%; left: 56.5%; }
 #button16 { top: 46.3%; left: 24%; }
 #button17 { top: 60.5%; left: 45.2%; }
-#button18 { top: 12%; left: 60%; }
-#button19 { top: 12%; left: 20%; }
-#button20 { top: 12%; left: 40%; }
-#button21 { top: 12%; left: 60%; }
-#button22 { top: 12%; left: 20%; }
-#button23 { top: 12%; left: 40%; }
-#button24 { top: 12%; left: 60%; }
+#button18 { top: 81.3%; left: 11.2%; }
+#button19 { top: 38.7%; left: 34.5%; }
+#button20 { top: 53%; left: 56%; }
+#button21 { top: 68%; left: 34%; }
+#button22 { top: 83%; left: 33.2%; }
+#button23 { top: 82.8%; left: 57%; }
+#button24 { top: 14.2%; left: 43.2%; }
 
 .container div {
   background-color: #f1f1f1;
