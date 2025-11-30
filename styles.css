@@ -17,13 +17,15 @@
   width: 9%;
   height: 6.5%;
   cursor: pointer;
+
   background: transparent;
   border: none;
+  font-size: 0;
 
   /* Visible buttons for changing their positions:
   background: rgba(255,255,255,0.2);
   border: 1px solid white;
-  font-size: 0;
+  font-size: 12;
   */
 
 }
