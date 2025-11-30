@@ -1,4 +1,5 @@
 import { PUZZLES } from "./assets.js";
+import { CURRENT_DATE } from "./config.js";
 
 function ShowPuzzle(id) {
     const puzzleId = PUZZLES["p"+id.toString()];
@@ -18,13 +19,12 @@ document.title = "Kuusikalenteri - " + date;
 document.getElementById("date-title").innerText = date;
 
 // Check if the puzzle is unlocked:
-const today = new Date();
 const puzzleDate = new Date(2025, 11, day);
-if (puzzleDate <= today) {
+if (puzzleDate <= CURRENT_DATE) {
     // Display puzzle content:
     ShowPuzzle(day);
 } else {
-    const datediff = Math.ceil((puzzleDate - today) / (1000 * 60 * 60 * 24));
+    const datediff = Math.ceil((puzzleDate - CURRENT_DATE) / (1000 * 60 * 60 * 24));
     document.getElementById("note").innerText = "Luukkun voi avata " + datediff + " päivän päästä."
 }
 
