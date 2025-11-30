@@ -1,7 +1,7 @@
 export const PUZZLES = {
   "p1": "1uNJ2GSJMDw2esXCzbyh77Mt9WnEn3YXY",
   "p2": "1Trg-6fXWRpdCatamcRhCqcdrrDLvVY7E",
-  "p3": "1dHjQ1y6wRfWcsfHxx98H4oST2Cqszfg7",
+  "p3": "",
   "p4": "",
   "p5": "",
   "p6": "",
