@@ -1,15 +1,9 @@
-import { PUZZLES } from "./assets.js";
 
-
+function OpenPuzzle(id) {
+    window.location.href = "./puzzle.html?day="+id;
+}
 
 for (let i=1; i<=24; i++) {
     let buttonId = "button" + i.toString();
-    document.getElementById(buttonId).onclick = function() { ShowPuzzle(i.toString()); }
-}
-
-function ShowPuzzle(id) {
-    const puzzleId = PUZZLES["p"+id.toString()];
-    const url = `https://lh3.googleusercontent.com/d/${puzzleId}=w1000`;
-
-    document.getElementById("test").src = url;
+    document.getElementById(buttonId).onclick = function() { OpenPuzzle(i.toString()); }
 }
