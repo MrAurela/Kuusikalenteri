@@ -1,17 +1,50 @@
 html {
-  background: url('images/kuusikalenteri.JPG') no-repeat center center fixed;
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  -o-background-size: contain;
-  background-size: contain;
+
 }
 
-.container {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  background-color: dodgerblue;
-  padding: 0;
+.calendar {
+  position: relative;
+  width: 100%;  
+  aspect-ratio: 16 / 9; /* or the real aspect ratio of your image */
+  background-image: url('images/kuusikalenteri.JPG');
+  background-size: cover;
+  background-position: center;
 }
+
+.calendar button {
+  position: absolute;
+  width: 6.25%;       /* size also in % so it scales */
+  height: 7%;
+  background: rgba(255,255,255,0.2);
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+/* Example door placement */
+#button1 { top: 80%; left: 31.7%; }
+#button2 { top: 28%; left: 46.5%; }
+#button3 { top: 36.5%; left: 53.6%; }
+#button4 { top: 12%; left: 20%; }
+#button5 { top: 12%; left: 40%; }
+#button6 { top: 12%; left: 60%; }
+#button7 { top: 12%; left: 20%; }
+#button8 { top: 12%; left: 40%; }
+#button9 { top: 12%; left: 60%; }
+#button10 { top: 12%; left: 20%; }
+#button11 { top: 12%; left: 40%; }
+#button12 { top: 12%; left: 60%; }
+#button13 { top: 12%; left: 20%; }
+#button14 { top: 12%; left: 40%; }
+#button15 { top: 12%; left: 60%; }
+#button16 { top: 12%; left: 20%; }
+#button17 { top: 12%; left: 40%; }
+#button18 { top: 12%; left: 60%; }
+#button19 { top: 12%; left: 20%; }
+#button20 { top: 12%; left: 40%; }
+#button21 { top: 12%; left: 60%; }
+#button22 { top: 12%; left: 20%; }
+#button23 { top: 12%; left: 40%; }
+#button24 { top: 12%; left: 60%; }
 
 .container div {
   background-color: #f1f1f1;
@@ -29,5 +62,5 @@ button {
 .invisible {
   background: transparent;
   border: none !important;
-  font-size:0;
+  font-size: 0;
 }
