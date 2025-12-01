@@ -1,8 +1,7 @@
-import { PUZZLES } from "./assets.js";
-import { CURRENT_DATE } from "./config.js";
+import { PUZZLES, CURRENT_DATE } from "/config/config.js";
 
-function ShowPuzzle(id) {
-    const puzzleId = PUZZLES["p"+id.toString()];
+function ShowPuzzle(day) {
+    const puzzleId = PUZZLES[day];
 
     if (puzzleId != "") {
         const url = `https://lh3.googleusercontent.com/d/${puzzleId}=w1000`;
@@ -10,7 +9,7 @@ function ShowPuzzle(id) {
         return true;
     } else {
         return false;
-    }  
+    }
 }
 
 // Get search parameters:
