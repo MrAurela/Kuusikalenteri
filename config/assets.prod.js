@@ -1,6 +1,6 @@
 export const PUZZLES = {
   1: "18UvNNcd5NKTLJ2LKIihjd8rW7q1gOI6W",
-  2: "",
+  2: "1ejKxtR8ed5IgUPX92IH09sEMHX2jFqZL",
   3: "",
   4: "",
   5: "",
