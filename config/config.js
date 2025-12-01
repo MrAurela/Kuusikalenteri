@@ -1,5 +1,4 @@
 
-
 // PARAMETERS:
 const PRODUCTION_HOST = "mraurela.github.io";
 const PRODUCTION_PATH = "/Kuusikalenteri";
