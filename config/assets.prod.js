@@ -1,5 +1,5 @@
 export const PUZZLES = {
-  1: "",
+  1: "18UvNNcd5NKTLJ2LKIihjd8rW7q1gOI6W",
   2: "",
   3: "",
   4: "",
