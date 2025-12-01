@@ -12,7 +12,7 @@ html {
   max-height: 90vh;
   max-width: 90vw;
   aspect-ratio: 1; /* square, instead of original aspect ratio 1.5 */
-  background-image: url('images/kuusikalenteri.JPG');
+  background-image: url('./images/kuusikalenteri.JPG');
   background-size: cover;
   background-position: center;
   margin: auto;

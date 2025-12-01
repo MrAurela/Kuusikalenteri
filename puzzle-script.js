@@ -1,4 +1,4 @@
-import { PUZZLES, CURRENT_DATE } from "/config/config.js";
+import { PUZZLES, CURRENT_DATE } from "./config/config.js";
 
 function ShowPuzzle(day) {
     const puzzleId = PUZZLES[day];
