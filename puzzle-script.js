@@ -23,7 +23,7 @@ document.title = "Kuusikalenteri - " + date;
 document.getElementById("date-title").innerText = date;
 
 // Check if the puzzle is unlocked:
-const puzzleDate = new Date(2025, 11, day);
+const puzzleDate = new Date(2025, 11, day, 6, 0, 0);
 if (puzzleDate <= CURRENT_DATE) {
     document.getElementById("puzzle-image").classList.remove("invisible");
     // Display puzzle content:s
@@ -32,8 +32,20 @@ if (puzzleDate <= CURRENT_DATE) {
         document.getElementById("puzzle-image").classList.add("invisible");
     }
 } else {
-    const datediff = Math.ceil((puzzleDate - CURRENT_DATE) / (1000 * 60 * 60 * 24));
-    document.getElementById("note").innerText = "Ei saa urkkia, luukkuihin kurkkia, ennen oikea päivää.\n\nTämän luukun voi avata " + datediff + " päivän päästä."
+    const timediff = puzzleDate - CURRENT_DATE;
+    const hoursdiff = timediff / (1000 * 60 * 60);
+    const datediff = Math.ceil(hoursdiff / 24);
+    
+    let message;
+    if (hoursdiff < 6) {
+        message = "Ei saa urkkia, luukkuihin kurkkia, ennen oikea päivää.\n\nTämän luukun voi avata aamulla.";
+    } else if (hoursdiff < 18) {
+        message = "Ei saa urkkia, luukkuihin kurkkia, ennen oikea päivää.\n\nTämän luukun voi avata huomisaamuna.";
+    } else {
+        message = "Ei saa urkkia, luukkuihin kurkkia, ennen oikea päivää.\n\nTämän luukun voi avata " + datediff + " aamun päästä.";
+    }
+    
+    document.getElementById("note").innerText = message;
     document.getElementById("puzzle-image").classList.add("invisible");
 }
 
