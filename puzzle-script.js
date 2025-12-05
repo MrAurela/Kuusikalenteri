@@ -4,7 +4,7 @@ function ShowPuzzle(day) {
     const puzzleId = PUZZLES[day];
 
     if (puzzleId != "") {
-        const url = `https://lh3.googleusercontent.com/d/${puzzleId}=w1000`;
+        const url = `https://lh3.googleusercontent.com/d/${puzzleId}=w1000?cachebust=${Date.now()}}`;
         document.getElementById("puzzle-image").src = url;
         return true;
     } else {
