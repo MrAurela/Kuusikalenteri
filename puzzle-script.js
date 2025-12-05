@@ -25,13 +25,16 @@ document.getElementById("date-title").innerText = date;
 // Check if the puzzle is unlocked:
 const puzzleDate = new Date(2025, 11, day);
 if (puzzleDate <= CURRENT_DATE) {
-    // Display puzzle content:
+    document.getElementById("puzzle-image").classList.remove("invisible");
+    // Display puzzle content:s
     if (!ShowPuzzle(day)) {
         document.getElementById("note").innerText = "Voihan Tonttu! Joku on tainnut unohtaa täyttää tämän luukun.\n\nPalaa myöhemmin tarkistamaan uudestaan."
+        document.getElementById("puzzle-image").classList.add("invisible");
     }
 } else {
     const datediff = Math.ceil((puzzleDate - CURRENT_DATE) / (1000 * 60 * 60 * 24));
     document.getElementById("note").innerText = "Ei saa urkkia, luukkuihin kurkkia, ennen oikea päivää.\n\nTämän luukun voi avata " + datediff + " päivän päästä."
+    document.getElementById("puzzle-image").classList.add("invisible");
 }
 
 
