@@ -12,6 +12,33 @@ function ShowPuzzle(day) {
     }
 }
 
+function OpenPuzzle(id) {
+    window.location.href = "./puzzle.html?day="+id;
+}
+
+function previousPuzzle() {
+    if (Number(day)-1 > 0) {
+        OpenPuzzle(Number(day)-1);
+    } else {
+        window.location.href = "./index.html"
+    }
+}
+
+function nextPuzzle() {
+    if (Number(day)+1 <=24) {
+        OpenPuzzle(Number(day)+1);
+    } else {
+        window.location.href = "./index.html"
+    }
+}
+
+
+
+
+
+document.getElementById("previous").onclick = function() {previousPuzzle();}
+document.getElementById("next").onclick = function() {nextPuzzle();}
+
 // Get search parameters:
 const paramsString = window.location.search;
 const searchParams = new URLSearchParams(paramsString);
