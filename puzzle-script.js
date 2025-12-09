@@ -20,7 +20,7 @@ function previousPuzzle() {
     if (Number(day)-1 > 0) {
         OpenPuzzle(Number(day)-1);
     } else {
-        window.location.href = "./index.html"
+        returnFrontPage();
     }
 }
 
@@ -28,12 +28,22 @@ function nextPuzzle() {
     if (Number(day)+1 <=24) {
         OpenPuzzle(Number(day)+1);
     } else {
-        window.location.href = "./index.html"
+        returnFrontPage();
     }
+}
+
+function returnFrontPage() {
+    window.location.href = "./index.html";
+}
+
+function setSolved() {
+    alert("Painamalla tästä voit tulevaisuudessa merkitä pulman ratkaistuksi.");
 }
 
 document.getElementById("previous").onclick = function() {previousPuzzle();}
 document.getElementById("next").onclick = function() {nextPuzzle();}
+document.getElementById("home").onclick = function() {returnFrontPage();}
+document.getElementById("solved").onclick = function() {setSolved();}
 
 // Get search parameters:
 const paramsString = window.location.search;
