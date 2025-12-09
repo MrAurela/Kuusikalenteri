@@ -8,19 +8,29 @@ html {
   background-color: #dbd6c5;
 }
 
-.calendar {
+header {
+  height: 0;
+}
+
+footer {
+  height: 0;
+}
+
+/* -------------------- Front page -------------------- */
+
+#calendar {
   position: relative;
   max-height: 90vh;
   max-width: 90vw;
   aspect-ratio: 1; /* square, instead of original aspect ratio 1.5 */
-  background-image: url('./images/kuusikalenteri.JPG');
+  background-image: url('./images/kuusikalenteri.webp');
   background-size: cover;
   background-position: center;
   margin: auto;
   box-shadow: 0 0 8px 8px #dbd6c5 inset;
 }
 
-.calendar button {
+#calendar button {
   position: absolute;
   width: 9%;
   height: 6.5%;
@@ -64,6 +74,9 @@ html {
 #button23 { top: 82.8%; left: 57%; }
 #button24 { top: 14.2%; left: 43.2%; }
 
+
+/* -------------------- Puzzle page -------------------- */
+
 #puzzle-image {
   display: block;
   max-width: 80vw;
@@ -82,12 +95,66 @@ html {
   font-size: 0 !important;
 }
 
-h1 {
-  text-align: center;
-  padding: 10px;
-  max-height: 10vh;
-}
-
 #note {
   text-align: center;
 }
+
+#puzzle-header {
+  height: 10vh;
+  width: 640px;
+  margin: auto;
+  display: flex;                  /* put items in one row */
+  align-items: center;            /* vertically center them */
+  justify-content: space-between;
+}
+
+#content   {
+  margin: 5vh 5vw;
+}
+
+.arrow {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 8vh;
+  line-height: 8vh;
+}
+
+header > button {
+  height: 80%;
+  aspect-ratio: 1;
+
+  border: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-color: transparent;
+
+  cursor: pointer;
+}
+
+.date-title {
+  text-align: center;
+  padding: 10px;
+  max-height: 100%;
+}
+
+#home {
+  background-image: url("./images/icon.svg");
+}
+
+#solved {
+  background-image: url("./images/unsolved.svg");
+}
+
+@media screen and (max-width: 720px) {
+  .arrow {
+    font-size: 2.5em;
+    padding-top: 0;
+  }
+  
+  #puzzle-header {
+    width: 100vw;
+  }
+}
+
+
