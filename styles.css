@@ -8,19 +8,19 @@ html {
   background-color: #dbd6c5;
 }
 
-.calendar {
+#calendar {
   position: relative;
   max-height: 90vh;
   max-width: 90vw;
   aspect-ratio: 1; /* square, instead of original aspect ratio 1.5 */
-  background-image: url('./images/kuusikalenteri.JPG');
+  background-image: url('./images/kuusikalenteri.webp');
   background-size: cover;
   background-position: center;
   margin: auto;
   box-shadow: 0 0 8px 8px #dbd6c5 inset;
 }
 
-.calendar button {
+#calendar button {
   position: absolute;
   width: 9%;
   height: 6.5%;
