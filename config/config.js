@@ -6,7 +6,7 @@ const PRODUCTION_PATH = "/Kuusikalenteri";
 
 // PARAMETERS - TEST ONLY:
 const DEBUG_DATE = new Date(2025,11,12);
-const DEBUG_AS_PROD = false;
+const DEBUG_AS_PROD = true;
 
 
 // EXPORTED VALUES:

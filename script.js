@@ -1,4 +1,6 @@
 
+import { PUZZLES, CURRENT_DATE } from "./config/config.js";
+
 function OpenPuzzle(id) {
     window.location.href = "./puzzle.html?day="+id;
 }
@@ -7,7 +9,8 @@ function BoxOnClick(id) {
     if (id === state.substring(1)) {
         OpenPuzzle(id);
     } else {
-        SetStateById(id);
+        const note = BoxHasNote(id);
+        SetStateById(id, note);
     }
 }
 
@@ -31,7 +34,6 @@ function SetStateByString(strState) {
         };
     }
 
-   
 }
 
 function SetStateById(id, note=true) {
@@ -45,6 +47,15 @@ function SetStateById(id, note=true) {
         // Default state image:
        SetStateByString("kuusikalenteri");
     }
+}
+
+function BoxHasNote(id) {
+    /* Has note: if the puzzle is active (unlocked but unsolved)
+     * Empty: if the puzzle is inactive (solved or not yet unlocked)
+     * TODO: handling for solved puzzles
+    */
+    const boxDate = new Date(2025, 11, id, 6, 0, 0);
+    return boxDate <= CURRENT_DATE;
 }
 
 // Set how the boxes are displayed:
