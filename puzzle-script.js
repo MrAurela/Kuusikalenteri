@@ -32,10 +32,6 @@ function nextPuzzle() {
     }
 }
 
-
-
-
-
 document.getElementById("previous").onclick = function() {previousPuzzle();}
 document.getElementById("next").onclick = function() {nextPuzzle();}
 
