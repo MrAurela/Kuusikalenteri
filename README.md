@@ -1,9 +1,7 @@
-**Kuusikalenteri** (eng. _The Spruce Calendar_) is my family's Advent Calendar, built by my father from wood and matchstick boxes.
+**Kuusikalenteri** (eng. _The Spruce Calendar_) is my family's Advent Calendar. Originally built by my father from wood, matchstick boxes, and glue, it has now been restored in a digital form with HTML, CSS, and JavaScript.
 
-Each morning from the First of December to the Twenty-Fourth of December, my siblings and I would open one of the numbered boxes and find a piece of paper with a puzzle from the **Tonttu** (eng. Christmas Elf). Originally, puzzles varied from ciphers and word search puzzles to picture clues and treasure maps. Later, as we grew older, the puzzles also evolved to more complex forms. Some puzzles even required using outside tools, such as searching for events of a given date or location of coordinates from the internet. No matter how the answer was hidden, it was always a clue pointing towards a location in the house. The last step was then searching the secret location for the prize, a piece of candy or a bar of chocolate.   
+**Each December morning until Christmas Eve**, my siblings and I would open one of the numbered boxes and find a piece of paper with a puzzle from the **Tonttu** (eng. Christmas Elf). Initially, the puzzles were simple ciphers, word searches, and treasure maps. But as we grew older, they took more forms, including photos, sheet music, coordinates, or obscure facts requiring Wikipedia to understand. What all the puzzles shared in common, was that the answer always pointed to a location in the house. The last step of each puzzle was therefore to search the secret location for a hidden chocolate prize.
 
-As the children of the house started moving out, **Tonttu** started sending the puzzles as text messages, from my father's number for some reason. 2025 was the first year with no children living in our childhood home.
-
-This digitalization project of **Kuusikalenteri** is my effort to keep the Magic of Christmas alive.
+After the first of my siblings moved out, **Tonttu** stepped towards digitalization by sending the puzzles as text messages. 2025 was the first year with no children living in our childhood home. This digitized **Kuusikalenteri** is my effort to keep the Magic of Christmas alive.
 
 ![Kuusikalenteri](https://github.com/user-attachments/assets/cd94f4ad-9668-4f8e-b275-648713c9aa23)
